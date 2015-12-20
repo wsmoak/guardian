@@ -152,7 +152,7 @@ From here, you can either EnsureAuthenticated in your pipeline, or on a per-cont
 defmodule MyApp.MyController do
   use MyApp.Web, :controller
 
-  plug Guardian.Plug.EnsureAuthenticated, handler: MyApp.MyAuthHandler
+  plug Guardian.Plug.EnsureAuthenticated, handler: MyApp.MyAuthErrorHandler
 end
 ```
 
